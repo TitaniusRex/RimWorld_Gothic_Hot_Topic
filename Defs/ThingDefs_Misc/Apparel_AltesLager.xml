@@ -2,6 +2,8 @@
 
 <Defs>
 
+	<!--====================================-->
+	
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>GHT_ShadowRobe</defName>
 		<label>shadow's robe</label>
@@ -139,5 +141,78 @@
 		</costList>
 		<costStuffCount>120</costStuffCount>
 	</ThingDef>
+
+	<!--====================================-->
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>GHT_LightGuardArmor</defName>
+		<label>light guard armor</label>
+		<description>They are worn by the guards of the colony. Made from tough leather and fabric.</description>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<displayPriority>210</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>700</MaxHitPoints>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>9</Mass>
+			<StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.95</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>1.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.86</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.87</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>5.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.7</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<costStuffCount>120</costStuffCount>
+	</ThingDef>
+	
+        <!--====================================-->
 	
 </Defs>
