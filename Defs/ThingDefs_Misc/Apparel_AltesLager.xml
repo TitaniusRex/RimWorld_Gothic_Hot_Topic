@@ -19,7 +19,6 @@
 			<drawSize>0.85</drawSize>
 		</graphicData>
 		<stuffCategories>
-			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<thingCategories>
@@ -41,14 +40,16 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AltesLager/ShadowRobe/ShadowRobe</wornGraphicPath>
 			<layers>
